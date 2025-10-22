@@ -1,0 +1,16 @@
+{
+  "name": "casas-elina",
+  "version": "1.0.0",
+  "description": "Sitio web de turismo rural Casas Elina - PEC1 UOC",
+  "scripts": {
+    "dev": "parcel src/index.html",
+    "build": "parcel build src/index.html"
+  },
+  "devDependencies": {
+    "parcel": "^2.16.0",
+    "sass": "^1.93.2"
+  },
+  "keywords": ["casas rurales", "Lucena del Cid", "turismo rural", "HTML", "CSS", "Parcel"],
+  "author": "Clara Salvador Villach",
+  "license": "ISC"
+}
