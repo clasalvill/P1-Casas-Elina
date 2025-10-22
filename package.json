@@ -7,10 +7,18 @@
     "build": "parcel build src/index.html"
   },
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.16.0",
     "parcel": "^2.16.0",
     "sass": "^1.93.2"
   },
-  "keywords": ["casas rurales", "Lucena del Cid", "turismo rural", "HTML", "CSS", "Parcel"],
+  "keywords": [
+    "casas rurales",
+    "Lucena del Cid",
+    "turismo rural",
+    "HTML",
+    "CSS",
+    "Parcel"
+  ],
   "author": "Clara Salvador Villach",
   "license": "ISC"
 }
