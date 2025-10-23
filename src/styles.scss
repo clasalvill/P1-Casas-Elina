@@ -13,6 +13,13 @@ body {
   padding: 50px;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
 h1 {
   color: $color-principal;
   margin-top: 40px;
