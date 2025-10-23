@@ -13,12 +13,17 @@ body {
   padding: 50px;
 }
 
-/* Actualizado tamaño de imágenes */
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
+/* Contenedor principal más estrecho en pantallas grandes */
+main {
+  max-width: 900px;
   margin: 0 auto;
+  padding: 20px;
+}
+
+/* Ajuste adicional de imágenes dentro de main */
+main img {
+  border-radius: 8px;
+  max-width: 90%;
 }
 
 h1 {

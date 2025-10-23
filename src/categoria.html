@@ -1,12 +1,34 @@
-<header>
-  <h1>Casas Elina</h1>
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Nuestras Casas - Casas Elina</title>
+    <link rel="stylesheet" href="styles.scss" />
+  </head>
 
-  <nav>
-    <ul>
-      <li><a href="index.html">Inicio</a></li>
-      <li><a href="categoria.html">Alojamientos</a></li>
-      <li><a href="links.html">Enlaces</a></li>
-    </ul>
-  </nav>
-</header>
+  <body>
+    <!-- Incluir cabecera reutilizable -->
+    <include src="header.html"></include>
 
+    <main>
+      <h2>Nuestras Casas Rurales</h2>
+
+      <section class="casa">
+        <h3><a href="det1.html">Casa Elina I</a></h3>
+        <img src="./imagenes/casa1.jpg" alt="Casa Elina I" />
+        <p>Ideal para familias, y/o grupos grandes. Con chimenea y decoración muy cuidada.</p>
+      </section>
+
+      <section class="casa">
+        <h3><a href="det2.html">Casa Elina II</a></h3>
+        <img src="./imagenes/casa2.jpg" alt="Casa Elina II" />
+        <p>Perfecta para escapadas en pareja o grupos. En el corazón del pueblo, en un ambiente acogedor y tranquilo.</p>
+      </section>
+    </main>
+
+    <footer>
+      <p>© 2025 Casas Elina · Todos los derechos reservados</p>
+    </footer>
+  </body>
+</html>
