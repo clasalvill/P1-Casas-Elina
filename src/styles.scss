@@ -89,3 +89,110 @@ main {
 footer {
   margin-top: auto; // empuja el footer al fondo
 }
+
+/* ---------- HEADER Y MENÚ ---------- */
+
+header {
+  background-color: #ffffff;
+  padding: 20px 0;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+
+  h1 {
+    margin: 0;
+    color: $color-principal;
+    font-size: 2rem;
+  }
+
+  nav {
+    margin-top: 10px;
+
+    ul {
+      list-style: none; /* elimina los puntos */
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      gap: 30px;
+    }
+
+    a {
+      color: $color-principal;
+      font-weight: bold;
+      text-decoration: none;
+      padding: 8px 12px;
+      border-radius: 6px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $color-principal;
+        color: #fff;
+      }
+    }
+  }
+}
+
+/* ---------- PÁGINA DE CATEGORÍAS ---------- */
+
+.categorias {
+  text-align: center;
+  padding: 40px 20px;
+
+  h2 {
+    color: $color-principal;
+    font-size: 1.8rem;
+    margin-bottom: 40px;
+  }
+
+  .lista-casas {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+
+    .casa {
+      background-color: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      width: 320px;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+      img {
+        width: 100%;
+        height: 220px;
+        object-fit: cover;
+      }
+
+      h3 {
+        margin: 15px 0 10px;
+        color: $color-principal;
+      }
+
+      p {
+        padding: 0 15px 20px;
+        color: #333;
+      }
+
+      a {
+        display: inline-block;
+        background-color: $color-principal;
+        color: white;
+        padding: 8px 14px;
+        border-radius: 6px;
+        text-decoration: none;
+        font-weight: bold;
+        margin-bottom: 15px;
+
+        &:hover {
+          background-color: darken($color-principal, 10%);
+        }
+      }
+
+      &:hover {
+        transform: scale(1.03);
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.25);
+      }
+    }
+  }
+}

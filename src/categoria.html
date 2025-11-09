@@ -3,34 +3,44 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Nuestras Casas - Casas Elina</title>
+    <title>Casas Elina - Alojamientos</title>
+    <!-- 👇 Este link ahora sí debe ser styles.scss (Parcel lo compila solo) -->
     <link rel="stylesheet" href="styles.scss" />
   </head>
   <body>
+    <!-- Header reutilizable -->
     <include src="header.html"></include>
 
-    <main>
+    <main class="categorias">
       <h2>Conoce nuestras Casas Rurales</h2>
 
-      <section class="casa">
-        <h3><a href="det1.html">Casa Elina I</a></h3>
-        <img src="./imagenes/casa1.jpg" alt="Casa Elina I" width="300" />
-        <img src="./imagenes/casa2.jpg" alt="Casa Elina I" width="300" />
-        <p>Ideal para familias y grupos grandes. Su decoración, basada en herramientas antiguas de labranza, aporta un encanto auténtico y rural.</p>
-      </section>
+      <div class="lista-casas">
+        <!-- Casa 1 -->
+        <div class="casa">
+          <img src="./imagenes/casa1.jpg" alt="Casa Elina I" />
+          <h3>Casa Elina I</h3>
+          <p>
+            Ideal para familias y grupos grandes. Su decoración, basada en herramientas antiguas de labranza, aporta un encanto auténtico y rural.
+          </p>
+          <a href="det1.html">Ver más</a>
+        </div>
 
-      <section class="casa">
-        <h3><a href="det2.html">Casa Elina II</a></h3>
-        <img src="./imagenes/casa2-1.jpg" alt="Casa Elina II" width="300" />
-        <img src="./imagenes/casa2-2.jpg" alt="Casa Elina II" width="300" />
-        <p>Ideal para parejas o pequeños grupos. En el corazón del pueblo, con una decoración rústica y un ambiente acogedor.</p>
-      </section>
+        <!-- Casa 2 -->
+        <div class="casa">
+          <img src="./imagenes/casa2-1.jpg" alt="Casa Elina II" />
+          <h3>Casa Elina II</h3>
+          <p>
+            Perfecta para parejas o pequeños grupos. En el corazón del pueblo, con una decoración rústica y un ambiente acogedor.
+          </p>
+          <a href="det2.html">Ver más</a>
+        </div>
+      </div>
 
       <p><a href="index.html">← Volver al inicio</a></p>
     </main>
 
     <footer>
-      <p>© 2025 Casas Elina</p>
+      <p>© 2025 Casas Elina · Lucena del Cid</p>
     </footer>
   </body>
 </html>
