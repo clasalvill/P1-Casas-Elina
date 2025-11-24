@@ -29,10 +29,22 @@
       </p>
 
       <!--  Imágenes dentro del body -->
-      <div class="galeria">
-        <img src="./imagenes/lucena1.jpg" alt="Casa Elina I" />
-        <img src="./imagenes/lucena3.jpg" alt="Río de Lucena" />
-      </div>
+ <div class="galeria">
+
+  <picture>
+    <source srcset="./imagenes/lucena1.jpg?as=avif" type="image/avif">
+    <source srcset="./imagenes/lucena1.jpg?as=webp" type="image/webp">
+    <img src="./imagenes/lucena1.jpg" alt="Casa Elina I">
+  </picture>
+
+  <picture>
+    <source srcset="./imagenes/lucena3.jpg?as=avif" type="image/avif">
+    <source srcset="./imagenes/lucena3.jpg?as=webp" type="image/webp">
+    <img src="./imagenes/lucena3.jpg" alt="Río de Lucena">
+  </picture>
+
+</div>
+
 
       <a href="categoria.html" class="btn">
         <i class="fa-solid fa-house"></i> Ver alojamientos
