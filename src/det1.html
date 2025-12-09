@@ -4,10 +4,10 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Elina I · Turismo rural en Lucena del Cid</title>
-    <link rel="stylesheet" href="styles.scss" />
   </head>
 
   <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
     <!-- HEADER -->
     <header>
       <h1>Casas Elina</h1>
@@ -21,7 +21,7 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main>
+    <main id="contenido" style="scroll-margin-top: 80px;">
       <h2>Casa Elina I 🌿</h2>
 
       <p>
@@ -32,24 +32,54 @@
       </p>
 
       <!-- Galería principal -->
-  <div class="galeria">
 
-  <picture>
-    <source srcset="./imagenes/casa1.jpg?as=avif" type="image/avif">
-    <source srcset="./imagenes/casa1.jpg?as=webp" type="image/webp">
-    <img src="./imagenes/casa1.jpg" alt="Casa Elina I - Fachada">
-  </picture>
+<picture>
+  <!-- Versión para móviles (recorte más pequeño) -->
+  <source
+    media="(max-width: 768px)"
+    srcset="
+      ./imagenes/casa1.jpg?width=500&as=avif 500w,
+      ./imagenes/casa1.jpg?width=500&as=webp 500w"
+    type="image/avif"
+  >
+
+  <source
+    media="(max-width: 768px)"
+    srcset="
+      ./imagenes/casa1.jpg?width=500&as=webp 500w"
+    type="image/webp"
+  >
+
+  <!-- Versión para pantallas grandes -->
+  <source
+    media="(min-width: 769px)"
+    srcset="
+      ./imagenes/casa1.jpg?width=1200&as=avif 1200w,
+      ./imagenes/casa1.jpg?width=1200&as=webp 1200w"
+    type="image/avif"
+  >
+
+  <source
+    media="(min-width: 769px)"
+    srcset="
+      ./imagenes/casa1.jpg?width=1200&as=webp 1200w"
+    type="image/webp"
+  >
+
+  <!-- Fallback JPG -->
+  <img
+    src="./imagenes/casa1.jpg"
+    alt="Casa Elina I - Fachada"
+    loading="lazy"
+  >
+</picture>
+
 
   <picture>
     <source srcset="./imagenes/casa5.jpg?as=avif" type="image/avif">
     <source srcset="./imagenes/casa5.jpg?as=webp" type="image/webp">
-    <img src="./imagenes/casa5.jpg" alt="Casa Elina I - Interior rústico">
+    <img src="./imagenes/casa5.jpg" alt="Casa Elina I - Interior rústico" loading="lazy">
   </picture>
-
-</div>
-
-
-      </div>
 
       <p>
         Ideal para familias y grupos que buscan tranquilidad, cuenta con amplias
@@ -63,20 +93,20 @@
 
       <!-- Galería secundaria -->
       <div class="galeria">
-        <img src="./imagenes/lucena1.jpg" alt="Paisaje natural de Lucena del Cid" />
-        <img src="./imagenes/lucena2.jpg" alt="Centro histórico de Lucena del Cid" />
+    <img src="./imagenes/lucena1.jpg" alt="Paisaje natural de Lucena del Cid" loading="lazy">
+    <img src="./imagenes/lucena2.jpg" alt="Centro histórico de Lucena del Cid" loading="lazy">
+
       </div>
 
       <!-- Vídeo -->
-      <div class="video">
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/ZLvurC6vPyY"
-          title="Vídeo de Lucena del Cid"
-          allowfullscreen
-        ></iframe>
-      </div>
+      <iframe
+        src="https://www.youtube.com/embed/ZLvurC6vPyY"
+        title="Vídeo turístico sobre Lucena del Cid"
+        loading="lazy"
+        allowfullscreen
+        referrerpolicy="strict-origin-when-cross-origin">
+      </iframe>
+
 
       <!-- Botón volver -->
       <p>

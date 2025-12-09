@@ -4,20 +4,36 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casas Elina - Alojamientos</title>
-    <!-- 👇 Este link ahora sí debe ser styles.scss (Parcel lo compila solo) -->
-    <link rel="stylesheet" href="styles.scss" />
+
   </head>
   <body>
-    <!-- Header reutilizable -->
-    <include src="header.html"></include>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
-    <main class="categorias">
+    <!-- Header reutilizable -->
+<header>
+  <h1>Casas Elina</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="categoria.html">Alojamientos</a></li>
+      <li><a href="links.html">Enlaces</a></li>
+    </ul>
+  </nav>
+</header>
+
+    <main id="contenido" class="categorias">
       <h2>Conoce nuestras Casas Rurales</h2>
 
       <div class="lista-casas">
+
         <!-- Casa 1 -->
         <div class="casa">
-          <img src="./imagenes/casa1.jpg" alt="Casa Elina I" />
+        <picture>
+          <source srcset="./imagenes/casa1.jpg?as=avif" type="image/avif">
+          <source srcset="./imagenes/casa1.jpg?as=webp" type="image/webp">
+         <img src="./imagenes/casa1.jpg" alt="Casa Elina I" loading="lazy">
+          </picture>
+
           <h3>Casa Elina I</h3>
           <p>
             Ideal para familias y grupos grandes. Su decoración, basada en herramientas antiguas de labranza, aporta un encanto auténtico y rural.
@@ -27,7 +43,12 @@
 
         <!-- Casa 2 -->
         <div class="casa">
-          <img src="./imagenes/casa2-1.jpg" alt="Casa Elina II" />
+          <picture>
+          <source srcset="./imagenes/casa2-1.jpg?as=avif" type="image/avif">
+          <source srcset="./imagenes/casa2-1.jpg?as=webp" type="image/webp">
+          <img src="./imagenes/casa2-1.jpg" alt="Casa Elina II" loading="lazy">
+          </picture>
+
           <h3>Casa Elina II</h3>
           <p>
             Perfecta para parejas o pequeños grupos. En el corazón del pueblo, con una decoración rústica y un ambiente acogedor.
@@ -42,5 +63,7 @@
     <footer>
       <p>© 2025 Casas Elina · Lucena del Cid</p>
     </footer>
+
+  <script type="module" src="./main.js"></script>
   </body>
 </html>
