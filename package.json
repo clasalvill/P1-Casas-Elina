@@ -28,5 +28,10 @@
   "license": "ISC",
   "dependencies": {
     "@fortawesome/fontawesome-free": "^7.1.0"
+  },
+  "targets": {
+    "default": {
+      "publicUrl": "./"
+    }
   }
 }
