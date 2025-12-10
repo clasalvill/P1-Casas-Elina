@@ -37,13 +37,29 @@
 
     <div class="galeria">
 
-      <picture>
-        <img id="portada1" alt="Paisaje de Lucena del Cid">
-      </picture>
 
-      <picture>
-        <img id="portada2" alt="Río de Lucena">
-      </picture>
+      <div class="galeria">
+
+  <picture>
+  <source srcset="./imagenes/lucena1.jpg?as=avif" type="image/avif">
+  <source srcset="./imagenes/lucena1.jpg?as=webp" type="image/webp">
+  <img src="./imagenes/lucena1.jpg"
+       alt="Paisaje de Lucena del Cid"
+       loading="lazy">
+</picture>
+
+<picture>
+  <source srcset="./imagenes/lucena3.jpg?as=avif" type="image/avif">
+  <source srcset="./imagenes/lucena3.jpg?as=webp" type="image/webp">
+  <img src="./imagenes/lucena3.jpg"
+       alt="Río de Lucena"
+       loading="lazy"
+       class="img-recorte">
+</picture>
+
+
+</div>
+
 
     </div>
 
