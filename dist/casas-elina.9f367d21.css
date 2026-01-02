@@ -1,0 +1,257 @@
+html {
+  font-size: 18px;
+}
+
+body {
+  color: #2b4d3f;
+  text-align: center;
+  background-color: #fff;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+}
+
+main {
+  flex: 1;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 60px 20px;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h2 {
+  margin-bottom: 20px;
+  font-size: 2rem;
+}
+
+p {
+  margin-bottom: 30px;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+.galeria {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  margin: 40px auto;
+  display: flex;
+}
+
+.galeria img {
+  border-radius: 12px;
+  width: 400px;
+  height: auto;
+  transition: transform .3s, box-shadow .3s;
+  box-shadow: 0 4px 10px #0003;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 6px 15px #00000040;
+}
+
+.galeria img.img-recorte {
+  object-fit: cover;
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 0 100%);
+  width: 400px;
+  height: 260px;
+  border-radius: 0 !important;
+}
+
+a {
+  color: #fff;
+  background-color: #2b4d3f;
+  border-radius: 6px;
+  margin-top: 20px;
+  padding: 10px 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: transform .3s, background-color .3s;
+  display: inline-block;
+}
+
+a:hover {
+  background-color: #192c24;
+  transform: scale(1.05);
+}
+
+footer {
+  color: #2b4d3f;
+  border-top: 1px solid #ddd;
+  margin-top: auto;
+  padding: 20px 0;
+  font-size: .9rem;
+}
+
+header {
+  background-color: #fff;
+  border-bottom: 1px solid #ddd;
+  margin-bottom: 40px;
+  padding: 20px 0;
+}
+
+header h1 {
+  color: #2b4d3f;
+  margin: 0;
+  font-size: 2rem;
+}
+
+header nav {
+  margin-top: 10px;
+}
+
+header nav ul {
+  justify-content: center;
+  gap: 30px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+header nav a {
+  color: #fff;
+  background-color: #2b4d3f;
+  border-radius: 8px;
+  padding: 10px 25px;
+  font-weight: bold;
+  transition: background-color .3s, transform .2s;
+}
+
+header nav a:hover {
+  background-color: #192c24;
+  transform: scale(1.05);
+}
+
+.categorias {
+  padding: 40px 20px;
+}
+
+.categorias h2 {
+  margin-bottom: 40px;
+  font-size: 1.8rem;
+}
+
+.categorias .lista-casas {
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  display: flex;
+}
+
+.categorias .lista-casas .casa {
+  background-color: #fff;
+  border-radius: 12px;
+  width: 320px;
+  transition: transform .3s, box-shadow .3s;
+  overflow: hidden;
+  box-shadow: 0 4px 10px #00000026;
+}
+
+.categorias .lista-casas .casa img {
+  object-fit: cover;
+  width: 100%;
+  height: 220px;
+}
+
+.categorias .lista-casas .casa h3 {
+  color: #2b4d3f;
+  margin: 15px 0 10px;
+}
+
+.categorias .lista-casas .casa p {
+  color: #333;
+  padding: 0 15px 20px;
+}
+
+.categorias .lista-casas .casa a {
+  margin-bottom: 15px;
+  padding: 8px 14px;
+}
+
+.categorias .lista-casas .casa a:hover {
+  background-color: #192c24;
+}
+
+.categorias .lista-casas .casa:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 20px #00000040;
+}
+
+.decorativo {
+  width: 100%;
+  max-width: 300px;
+  margin: 1rem auto;
+}
+
+.decorativo path {
+  stroke-dasharray: 200;
+  stroke-dashoffset: 200px;
+  animation: 2s ease-out forwards draw;
+}
+
+@keyframes draw {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.aparece {
+  animation: 1.2s ease-out both fadeIn;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    transition: none !important;
+    animation: none !important;
+  }
+}
+
+.skip-link {
+  color: #fff;
+  z-index: 9999;
+  background: #2b4d3f;
+  border-radius: 4px;
+  padding: 10px 15px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: top .25s;
+  position: absolute;
+  top: -40px;
+  left: 10px;
+}
+
+.skip-link:focus {
+  top: 10px;
+}
+
+.detalle-img, main picture img {
+  border-radius: 10px;
+  width: 100%;
+  max-width: 350px;
+  margin: 0 auto;
+  display: block;
+  box-shadow: 0 4px 12px #00000026;
+}
+/*# sourceMappingURL=casas-elina.9f367d21.css.map */
