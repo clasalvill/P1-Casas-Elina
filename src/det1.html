@@ -22,7 +22,7 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main id="contenido" style="scroll-margin-top: 80px;">
+    <main id="contenido">
       <h2>Casa Elina I 🌿</h2>
 
       <p>
@@ -32,34 +32,43 @@
         naturaleza y tradición.
       </p>
 
-      <!-- Galería principal -->
+      <!-- Imagen principal (no lazy: está en el primer viewport) -->
       <picture>
-        <source media="(max-width: 768px)"
+        <source
+          media="(max-width: 768px)"
           srcset="
             ./imagenes/casa1.jpg?width=500&as=avif 500w,
-            ./imagenes/casa1.jpg?width=500&as=webp 500w"
+            ./imagenes/casa1.jpg?width=500&as=webp 500w
+          "
           type="image/avif"
         />
-        <source media="(max-width: 768px)"
-          srcset="./imagenes/casa1.jpg?width=500&as=webp 500w"
-          type="image/webp" />
-
-        <source media="(min-width: 769px)"
+        <source
+          media="(min-width: 769px)"
           srcset="
             ./imagenes/casa1.jpg?width=1200&as=avif 1200w,
-            ./imagenes/casa1.jpg?width=1200&as=webp 1200w"
-          type="image/avif" />
-        <source media="(min-width: 769px)"
-          srcset="./imagenes/casa1.jpg?width=1200&as=webp 1200w"
-          type="image/webp" />
-
-        <img src="./imagenes/casa1.jpg" alt="Casa Elina I - Fachada" loading="lazy" />
+            ./imagenes/casa1.jpg?width=1200&as=webp 1200w
+          "
+          type="image/avif"
+        />
+        <img
+          src="./imagenes/casa1.jpg"
+          alt="Casa Elina I - Fachada"
+          width="1200"
+          height="800"
+        />
       </picture>
 
+      <!-- Imagen secundaria -->
       <picture>
-        <source srcset="./imagenes/casa5.jpg?as=avif" type="image/avif">
-        <source srcset="./imagenes/casa5.jpg?as=webp" type="image/webp">
-        <img src="./imagenes/casa5.jpg" alt="Casa Elina I - Interior rústico" loading="lazy">
+        <source srcset="./imagenes/casa5.jpg?as=avif" type="image/avif" />
+        <source srcset="./imagenes/casa5.jpg?as=webp" type="image/webp" />
+        <img
+          src="./imagenes/casa5.jpg"
+          alt="Casa Elina I - Interior rústico"
+          loading="lazy"
+          width="800"
+          height="533"
+        />
       </picture>
 
       <p>
@@ -68,14 +77,27 @@
       </p>
 
       <p>
-        La decoración combina elementos tradicionales de labranza con toques modernos,
-        evocando la historia agrícola de la zona y el encanto rural de Lucena.
+        La decoración combina elementos tradicionales de labranza con toques
+        modernos, evocando la historia agrícola de la zona y el encanto rural de
+        Lucena.
       </p>
 
       <!-- Galería secundaria -->
       <div class="galeria">
-        <img src="./imagenes/lucena1.jpg" alt="Paisaje natural de Lucena del Cid" loading="lazy">
-        <img src="./imagenes/lucena2.jpg" alt="Centro histórico de Lucena del Cid" loading="lazy">
+        <img
+          src="./imagenes/lucena1.jpg"
+          alt="Paisaje natural de Lucena del Cid"
+          loading="lazy"
+          width="600"
+          height="400"
+        />
+        <img
+          src="./imagenes/lucena2.jpg"
+          alt="Centro histórico de Lucena del Cid"
+          loading="lazy"
+          width="600"
+          height="400"
+        />
       </div>
 
       <!-- Vídeo -->
@@ -83,6 +105,8 @@
         src="https://www.youtube.com/embed/ZLvurC6vPyY"
         title="Vídeo turístico sobre Lucena del Cid"
         loading="lazy"
+        width="560"
+        height="315"
         allowfullscreen
         referrerpolicy="strict-origin-when-cross-origin">
       </iframe>
@@ -98,7 +122,7 @@
       <p>© 2025 Casas Elina · Lucena del Cid</p>
     </footer>
 
-    <!-- JS -->
-    <script type="module" src="./main.js"></script>
+    <!-- JS: carga asíncrona -->
+    <script type="module" src="./main.js" defer></script>
   </body>
 </html>

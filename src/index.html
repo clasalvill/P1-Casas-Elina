@@ -6,73 +6,77 @@
     <title>Casas Elina - Turismo rural en Lucena del Cid</title>
   </head>
 
-<body>
-  <a href="#contenido" class="skip-link">Saltar al contenido</a>
+  <body>
+    <a href="#contenido" class="skip-link">Saltar al contenido</a>
 
-  <header>
-    <h1>Casas Elina</h1>
-    <nav>
-      <ul>
-        <li><a href="index.html">Inicio</a></li>
-        <li><a href="categoria.html">Alojamientos</a></li>
-        <li><a href="links.html">Enlaces</a></li>
-      </ul>
-    </nav>
-  </header>
+    <header>
+      <h1>Casas Elina</h1>
+      <nav>
+        <ul>
+          <li><a href="index.html">Inicio</a></li>
+          <li><a href="categoria.html">Alojamientos</a></li>
+          <li><a href="links.html">Enlaces</a></li>
+        </ul>
+      </nav>
+    </header>
 
-  <main id="contenido" style="scroll-margin-top: 80px;">
+    <main id="contenido">
+      <h2 class="aparece">Bienvenidos a Casas Elina 🌿</h2>
 
-    <h2 class="aparece">Bienvenidos a Casas Elina 🌿</h2>
+      <!-- SVG decorativo -->
+      <svg
+        class="decorativo"
+        viewBox="0 0 200 50"
+        xmlns="http://www.w3.org/2000/svg"
+        aria-hidden="true">
+        <path
+          d="M10 40 Q 95 10 180 40"
+          stroke="#2b4d3f"
+          stroke-width="4"
+          fill="none" />
+      </svg>
 
-    <!-- SVG decorativo animado -->
-    <svg class="decorativo" viewBox="0 0 200 50" xmlns="http://www.w3.org/2000/svg">
-      <path d="M10 40 Q 95 10 180 40" stroke="#2b4d3f" stroke-width="4" fill="none" />
-    </svg>
+      <p>
+        Descubre el encanto de nuestras casas rurales en
+        <strong>Lucena del Cid</strong>, un pueblo rodeado de naturaleza y
+        tranquilidad.
+      </p>
 
-    <p>
-      Descubre el encanto de nuestras casas rurales en
-      <strong>Lucena del Cid</strong>, un pueblo rodeado de naturaleza y
-      tranquilidad.
-    </p>
-
-    <div class="galeria">
-
-
+      <!-- Galería -->
       <div class="galeria">
+        <!-- Imagen principal (no lazy) -->
+        <picture>
+          <source srcset="./imagenes/lucena1.jpg?as=avif" type="image/avif" />
+          <source srcset="./imagenes/lucena1.jpg?as=webp" type="image/webp" />
+          <img
+            src="./imagenes/lucena1.jpg"
+            alt="Paisaje de Lucena del Cid"
+            width="800"
+            height="533" />
+        </picture>
 
-  <picture>
-  <source srcset="./imagenes/lucena1.jpg?as=avif" type="image/avif">
-  <source srcset="./imagenes/lucena1.jpg?as=webp" type="image/webp">
-  <img src="./imagenes/lucena1.jpg"
-       alt="Paisaje de Lucena del Cid"
-       loading="lazy">
-</picture>
+        <!-- Imagen secundaria -->
+        <picture>
+          <source srcset="./imagenes/lucena3.jpg?as=avif" type="image/avif" />
+          <source srcset="./imagenes/lucena3.jpg?as=webp" type="image/webp" />
+          <img
+            src="./imagenes/lucena3.jpg"
+            alt="Río de Lucena"
+            class="img-recorte"
+            loading="lazy"
+            width="800"
+            height="533" />
+        </picture>
+      </div>
 
-<picture>
-  <source srcset="./imagenes/lucena3.jpg?as=avif" type="image/avif">
-  <source srcset="./imagenes/lucena3.jpg?as=webp" type="image/webp">
-  <img src="./imagenes/lucena3.jpg"
-       alt="Río de Lucena"
-       loading="lazy"
-       class="img-recorte">
-</picture>
+      <a href="categoria.html" class="btn">Ver alojamientos</a>
+    </main>
 
+    <footer>
+      <p>© 2025 Casas Elina · Lucena del Cid</p>
+    </footer>
 
-</div>
-
-
-    </div>
-
-    <a href="categoria.html" class="btn">
-      Ver alojamientos
-    </a>
-
-  </main>
-
-  <footer>
-    <p>© 2025 Casas Elina · Lucena del Cid</p>
-  </footer>
-  <script type="module" src="./main.js"></script>
-
-</body>
+    <!-- JS no bloqueante -->
+    <script type="module" src="./main.js" defer></script>
+  </body>
 </html>
