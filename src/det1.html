@@ -4,6 +4,9 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Casa Elina I · Turismo rural en Lucena del Cid</title>
+
+    <!-- Estilos -->
+    <link rel="stylesheet" href="./styles.scss" />
   </head>
 
   <body>
@@ -22,7 +25,7 @@
     </header>
 
     <!-- CONTENIDO PRINCIPAL -->
-    <main id="contenido">
+    <main id="contenido" class="detalle">
       <h2>Casa Elina I 🌿</h2>
 
       <p>
@@ -32,22 +35,25 @@
         naturaleza y tradición.
       </p>
 
-      <!-- Imagen principal (LCP, sin lazy, sin picture) -->
-      <img
-        src="./imagenes/casa1.jpg"
-        alt="Casa Elina I - Fachada"
-        width="1200"
-        height="800"
-      />
+      <!-- IMÁGENES PRINCIPALES -->
+      <div class="imagenes-detalle">
+        <!-- Imagen LCP -->
+        <img
+          src="./imagenes/casa1.jpg"
+          alt="Fachada Casa Elina I"
+          class="img-detalle img-lcp"
+          loading="eager"
+          fetchpriority="high"
+        />
 
-      <!-- Imagen secundaria -->
-      <img
-        src="./imagenes/casa5.jpg"
-        alt="Casa Elina I - Interior rústico"
-        loading="lazy"
-        width="800"
-        height="533"
-      />
+        <!-- Imagen secundaria -->
+        <img
+          src="./imagenes/casa5.jpg"
+          alt="Interior rústico de Casa Elina I"
+          class="img-detalle"
+          loading="lazy"
+        />
+      </div>
 
       <p>
         Ideal para familias y grupos que buscan tranquilidad, cuenta con amplias
@@ -60,36 +66,31 @@
         Lucena.
       </p>
 
-      <!-- Galería secundaria -->
+      <!-- GALERÍA -->
       <div class="galeria">
         <img
           src="./imagenes/lucena1.jpg"
           alt="Paisaje natural de Lucena del Cid"
           loading="lazy"
-          width="600"
-          height="400"
         />
         <img
           src="./imagenes/lucena2.jpg"
           alt="Centro histórico de Lucena del Cid"
           loading="lazy"
-          width="600"
-          height="400"
         />
       </div>
 
-      <!-- Vídeo -->
+      <!-- VÍDEO -->
       <iframe
         src="https://www.youtube.com/embed/ZLvurC6vPyY"
         title="Vídeo turístico sobre Lucena del Cid"
         loading="lazy"
         width="560"
         height="315"
-        allowfullscreen
-        referrerpolicy="strict-origin-when-cross-origin">
+        allowfullscreen>
       </iframe>
 
-      <!-- Botón volver -->
+      <!-- VOLVER -->
       <p>
         <a href="categoria.html" class="btn">← Volver a las casas</a>
       </p>
@@ -100,7 +101,7 @@
       <p>© 2025 Casas Elina · Lucena del Cid</p>
     </footer>
 
-    <!-- JS: carga asíncrona -->
+    <!-- JS -->
     <script type="module" src="./main.js" defer></script>
   </body>
 </html>
