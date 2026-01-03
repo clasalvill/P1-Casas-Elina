@@ -207,11 +207,11 @@
       });
     }
   }
-})({"iUuJv":[function(require,module,exports,__globalThis) {
+})({"5nXaG":[function(require,module,exports,__globalThis) {
 var global = arguments[3];
 var HMR_HOST = null;
 var HMR_PORT = null;
-var HMR_SERVER_PORT = 1234;
+var HMR_SERVER_PORT = 63724;
 var HMR_SECURE = false;
 var HMR_ENV_HASH = "439701173a9199ea";
 var HMR_USE_SSE = false;
@@ -717,6 +717,6 @@ function hmrAccept(bundle /*: ParcelRequire */ , id /*: string */ ) {
 var _stylesScss = require("./styles.scss");
 document.addEventListener("DOMContentLoaded", ()=>{});
 
-},{"./styles.scss":"kMfPY"}],"kMfPY":[function() {},{}]},["iUuJv","fILKw"], "fILKw", "parcelRequire25e0", {})
+},{"./styles.scss":"kMfPY"}],"kMfPY":[function() {},{}]},["5nXaG","fILKw"], "fILKw", "parcelRequire25e0", {})
 
 //# sourceMappingURL=casas-elina.1fcc916e.js.map

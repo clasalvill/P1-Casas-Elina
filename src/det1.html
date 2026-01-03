@@ -37,13 +37,13 @@
 
       <!-- IMÁGENES PRINCIPALES -->
       <div class="imagenes-detalle">
-        <!-- Imagen principal (LCP) -->
+        <!-- Imagen principal (LCP, sin forzar prioridad) -->
         <img
           src="./imagenes/casa1.jpg"
           alt="Fachada Casa Elina I"
           class="img-detalle img-lcp"
-          loading="eager"
-          fetchpriority="high"
+          width="1200"
+          height="800"
         />
 
         <!-- Imagen secundaria -->
@@ -52,6 +52,8 @@
           alt="Interior rústico de Casa Elina I"
           class="img-detalle"
           loading="lazy"
+          width="800"
+          height="533"
         />
       </div>
 
@@ -72,11 +74,15 @@
           src="./imagenes/lucena1.jpg"
           alt="Paisaje natural de Lucena del Cid"
           loading="lazy"
+          width="600"
+          height="400"
         />
         <img
           src="./imagenes/lucena2.jpg"
           alt="Centro histórico de Lucena del Cid"
           loading="lazy"
+          width="600"
+          height="400"
         />
       </div>
 
